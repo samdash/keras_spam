@@ -13,7 +13,6 @@ from keras.models import load_model
 model = load_model('spam_cnn.h5')
 
 # predict
-text = "how should i restart my apple watch?"
 text = "if you are having any issues please contact jack from accounts at 8 6 6 9 8 9 8 9 0 0"
 raw_x = sentence_to_index(text,data['word_to_id'],256)
 
